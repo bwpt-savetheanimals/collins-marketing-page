@@ -1,0 +1,38 @@
+header {
+  display: flex;
+  flex-direction: column;
+  color: @green;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 35%;
+    padding-right: 35%;
+    margin-bottom: 1%;
+    padding-top: 1%;
+    font-size: 1.5rem;
+    a {
+      text-decoration: none;
+      color: @a-tag-color;
+      &:hover,
+      &:active {
+        background-color: #ffffff;
+        font-size: 150%;
+        color: @green;
+      }
+    }
+    // @media @phone {
+    //   width: 73%;
+    //   margin-left: 13%;
+    //   margin-top: 2%;
+    //   margin-bottom: 2%;
+    //   justify-content: space-between;
+    //   font-size: 1.3rem;
+    // }
+  }
+  h1 {
+    .flex-box();
+    font-size: 3.5rem;
+    margin-top: 1%;
+  }
+}

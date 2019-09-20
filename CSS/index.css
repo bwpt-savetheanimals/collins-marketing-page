@@ -1,3 +1,32 @@
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-box-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.button {
+  color: #494949;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #773f1a;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.button:hover {
+  color: #ffffff;
+  background: #007ba7;
+  border-color: #007ba7;
+  transition: all 0.4s ease 0s;
+}
 /**
 * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
 * http://cssreset.com
@@ -113,6 +142,7 @@ ul {
 }
 * {
   box-sizing: border-box;
+  margin: auto;
 }
 html {
   font-size: 62.5%;
@@ -135,14 +165,148 @@ a {
   text-decoration: none;
   font-size: 2rem;
 }
+header {
+  display: flex;
+  flex-direction: column;
+  color: #46792f;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 35%;
+  padding-right: 35%;
+  margin-bottom: 1%;
+  padding-top: 1%;
+  font-size: 1.5rem;
+}
+header nav a {
+  text-decoration: none;
+  color: #007ba7;
+}
+header nav a:hover,
+header nav a:active {
+  background-color: #ffffff;
+  font-size: 150%;
+  color: #46792f;
+}
+header h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  margin-top: 1%;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  color: #46792f;
+}
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-left: 35%;
+  padding-right: 35%;
+  margin-bottom: 1%;
+  padding-top: 1%;
+  font-size: 1.5rem;
+}
+footer nav a {
+  text-decoration: none;
+  color: #007ba7;
+}
+footer nav a:hover,
+footer nav a:active {
+  background-color: #ffffff;
+  font-size: 150%;
+  color: #46792f;
+}
+.container-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: red;
+}
 .banner {
   position: relative;
   text-align: center;
   color: white;
 }
-.centered {
+.banner .centered {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.firstContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+  margin: 5%;
+}
+.firstContent .text-content {
+  width: 70%;
+}
+.firstContent .text-content h3 {
+  margin-bottom: 2%;
+}
+.firstContent img {
+  margin-left: 38%;
+}
+.firstContent a {
+  color: #494949;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #773f1a;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.firstContent a:hover {
+  color: #ffffff;
+  background: #007ba7;
+  border-color: #007ba7;
+  transition: all 0.4s ease 0s;
+}
+.secondContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 75%;
+  margin: 5%;
+}
+.secondContent .text-content {
+  width: 70%;
+}
+.secondContent .text-content h3 {
+  margin-bottom: 2%;
+}
+.secondContent img {
+  margin-right: 38%;
+}
+.secondContent a {
+  color: #494949;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 20px;
+  border: 4px solid #773f1a;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  margin-top: 3%;
+  margin-bottom: 5%;
+}
+.secondContent a:hover {
+  color: #ffffff;
+  background: #007ba7;
+  border-color: #007ba7;
+  transition: all 0.4s ease 0s;
 }
