@@ -2,6 +2,7 @@ header {
   display: flex;
   flex-direction: column;
   color: @green;
+
   nav {
     display: flex;
     justify-content: space-between;
@@ -11,9 +12,16 @@ header {
     margin-bottom: 1%;
     padding-top: 1%;
     font-size: 1.5rem;
+    @media @phone {
+      flex-direction: column;
+    }
     a {
       text-decoration: none;
       color: @a-tag-color;
+      @media @phone {
+        margin: 5% 0;
+      }
+
       &:hover,
       &:active {
         background-color: #ffffff;
