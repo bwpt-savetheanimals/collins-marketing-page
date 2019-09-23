@@ -202,6 +202,11 @@ header nav {
     align-items: center;
   }
 }
+@media (max-width: 800px) {
+  header nav {
+    width: 75%;
+  }
+}
 header nav a {
   text-decoration: none;
   color: #007ba7;
@@ -214,7 +219,7 @@ header nav a {
 header nav a:hover,
 header nav a:active {
   background-color: #ffffff;
-  font-size: 150%;
+  font-size: 140%;
   color: #46792f;
 }
 header h1 {
@@ -243,6 +248,11 @@ footer nav {
     width: 100%;
   }
 }
+@media (max-width: 800px) {
+  footer nav {
+    width: 75%;
+  }
+}
 footer nav a {
   text-decoration: none;
   color: #007ba7;
@@ -253,17 +263,10 @@ footer nav a:active {
   font-size: 150%;
   color: #46792f;
 }
-@media (max-width: 100px) {
-  .container {
+@media (max-width: 1000px) {
+  body {
     width: 100%;
     margin: 0 auto;
-  }
-}
-@media (max-width: 500px) {
-  .container {
-    width: 100%;
-    margin: 0 auto;
-    background-color: yellow;
   }
 }
 .banner {
@@ -393,7 +396,7 @@ footer nav a:active {
 }
 @media (max-width: 500px) {
   .animal h3 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
   }
 }
 .animal img {

@@ -15,6 +15,10 @@ header {
       flex-direction: column;
       align-items: center;
     }
+    @media @tablet {
+      width: 75%;
+    }
+
     a {
       text-decoration: none;
       color: @a-tag-color;
@@ -25,18 +29,10 @@ header {
       &:hover,
       &:active {
         background-color: #ffffff;
-        font-size: 150%;
+        font-size: 140%;
         color: @green;
       }
     }
-    // @media @phone {
-    //   width: 73%;
-    //   margin-left: 13%;
-    //   margin-top: 2%;
-    //   margin-bottom: 2%;
-    //   justify-content: space-between;
-    //   font-size: 1.3rem;
-    // }
   }
   h1 {
     .flex-box();
