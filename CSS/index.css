@@ -383,9 +383,16 @@ footer nav a:active {
 .animal img {
   width: 30%;
 }
+@media (max-width: 800px) {
+  .animal {
+    width: 40%;
+    margin-bottom: 3%;
+  }
+}
 @media (max-width: 500px) {
   .animal {
     margin-bottom: 3%;
+    width: 50%;
   }
 }
 .animal h3 {
