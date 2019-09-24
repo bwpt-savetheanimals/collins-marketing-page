@@ -2,6 +2,7 @@ footer {
   display: flex;
   flex-direction: column;
   color: @green;
+
   nav {
     display: flex;
     justify-content: space-evenly;
@@ -10,11 +11,12 @@ footer {
     margin-bottom: 1%;
     padding-top: 1%;
     font-size: 1.5rem;
-    @media @phone {
-      width: 100%;
-    }
     @media @tablet {
       width: 75%;
+    }
+    @media @phone {
+      justify-content: space-between;
+      width: 80%;
     }
     a {
       text-decoration: none;
@@ -22,9 +24,15 @@ footer {
       &:hover,
       &:active {
         background-color: #ffffff;
-        font-size: 150%;
+        font-size: 140%;
         color: @green;
       }
+    }
+
+    h1 {
+      .flex-box();
+      font-size: 3.5rem;
+      margin-top: 1%;
     }
   }
 }
