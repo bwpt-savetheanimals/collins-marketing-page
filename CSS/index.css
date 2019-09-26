@@ -48,7 +48,9 @@
 .team-member-section {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 .team-member-box {
   width: 25%;
@@ -482,7 +484,9 @@ footer nav h1 {
 .firstTwo {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
+  margin-right: 15%;
+  margin-left: 15%;
 }
 .teamMember {
   width: 25%;
