@@ -21,6 +21,9 @@
   margin-bottom: 5%;
   font-size: 2.4rem;
 }
+.button a {
+  text-decoration: ;
+}
 .button:hover {
   color: #ffffff;
   background: #007ba7;
@@ -52,9 +55,21 @@
   margin-right: 15%;
   margin-left: 15%;
 }
+@media (max-width: 500px) {
+  .team-member-section {
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+}
 .team-member-box {
-  width: 25%;
-  border: 5px solid #46792f;
+  border: 5px solid #773f1a;
+  align-self: center;
+  margin: 1% 0;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+  box-shadow: 5px 10px #007ba7;
 }
 @media (max-width: 500px) {
   .team-member-box {
@@ -63,6 +78,52 @@
 }
 .team-member-box img {
   width: 30%;
+}
+@media (max-width: 800px) {
+  .team-member-box {
+    width: 40%;
+    margin-bottom: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .team-member-box {
+    margin-bottom: 3%;
+    width: 50%;
+  }
+}
+.team-member-box h3 {
+  text-align: center;
+  margin-top: 4%;
+  padding-bottom: 2%;
+  color: #46792f;
+  word-break: break-word;
+}
+@media (max-width: 500px) {
+  .team-member-box h3 {
+    font-size: 2.5rem;
+  }
+}
+.team-member-box img {
+  align-content: center;
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  border-top: 2px solid #773f1a;
+}
+.team-member-box ul {
+  word-break: break-all;
+  margin: 5% 0;
+}
+.team-member-box ul a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+.team-member-box li {
+  margin: 5% 0 5% 7%;
+  font-size: 1rem;
+}
+.team-member-box:hover {
+  box-shadow: 0 0 11px #46792f;
 }
 /**
 * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
@@ -346,6 +407,9 @@ footer nav h1 {
   margin-bottom: 5%;
   font-size: 2.4rem;
 }
+.firstContent button a {
+  text-decoration: ;
+}
 .firstContent button:hover {
   color: #ffffff;
   background: #007ba7;
@@ -382,6 +446,9 @@ footer nav h1 {
   margin-top: 3%;
   margin-bottom: 5%;
   font-size: 2.4rem;
+}
+.secondContent button a {
+  text-decoration: ;
 }
 .secondContent button:hover {
   color: #ffffff;
@@ -459,10 +526,12 @@ footer nav h1 {
   box-shadow: 0 0 11px #46792f;
 }
 .donateButton {
+  display: flex;
+  align-items: center;
   color: white;
   text-decoration: none;
   background: #007ba7;
-  padding: 1.5rem;
+  padding: 10%rem;
   border-radius: 50px;
   display: inline-block;
   border: none;
@@ -488,20 +557,31 @@ footer nav h1 {
   margin-right: 15%;
   margin-left: 15%;
 }
+@media (max-width: 500px) {
+  .firstTwo {
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+}
+@media (max-width: 800px) {
+  .firstTwo {
+    justify-content: space-between;
+  }
+}
 .teamMember {
-  width: 25%;
-  border: 5px solid #46792f;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  border: 5px solid #773f1a;
   align-self: center;
   margin: 1% 0;
   border: 1px solid;
   padding: 10px;
   border-radius: 10px;
   transition: box-shadow 0.3s;
-  box-shadow: 5px 10px #46792f;
+  box-shadow: 5px 10px #007ba7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 35%;
 }
 @media (max-width: 500px) {
   .teamMember {
@@ -527,7 +607,8 @@ footer nav h1 {
   text-align: center;
   margin-top: 4%;
   padding-bottom: 2%;
-  color: #007ba7;
+  color: #46792f;
+  word-break: break-word;
 }
 @media (max-width: 500px) {
   .teamMember h3 {
@@ -542,6 +623,7 @@ footer nav h1 {
   border-top: 2px solid #773f1a;
 }
 .teamMember ul {
+  word-break: break-all;
   margin: 5% 0;
 }
 .teamMember ul a {
@@ -549,11 +631,95 @@ footer nav h1 {
   text-decoration: none;
 }
 .teamMember li {
-  margin: 5% 0;
+  margin: 5% 0 5% 7%;
   font-size: 1rem;
 }
 .teamMember:hover {
   box-shadow: 0 0 11px #46792f;
+}
+@media (max-width: 500px) {
+  .teamMember {
+    width: 90%;
+  }
+}
+.teamMember-2 {
+  border: 5px solid #773f1a;
+  align-self: center;
+  margin: 1% 0;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+  box-shadow: 5px 10px #007ba7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 22%;
+}
+@media (max-width: 500px) {
+  .teamMember-2 {
+    width: 50%;
+  }
+}
+.teamMember-2 img {
+  width: 30%;
+}
+@media (max-width: 800px) {
+  .teamMember-2 {
+    width: 40%;
+    margin-bottom: 3%;
+  }
+}
+@media (max-width: 500px) {
+  .teamMember-2 {
+    margin-bottom: 3%;
+    width: 50%;
+  }
+}
+.teamMember-2 h3 {
+  text-align: center;
+  margin-top: 4%;
+  padding-bottom: 2%;
+  color: #46792f;
+  word-break: break-word;
+}
+@media (max-width: 500px) {
+  .teamMember-2 h3 {
+    font-size: 2.5rem;
+  }
+}
+.teamMember-2 img {
+  align-content: center;
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  border-top: 2px solid #773f1a;
+}
+.teamMember-2 ul {
+  word-break: break-all;
+  margin: 5% 0;
+}
+.teamMember-2 ul a {
+  font-size: 1rem;
+  text-decoration: none;
+}
+.teamMember-2 li {
+  margin: 5% 0 5% 7%;
+  font-size: 1rem;
+}
+.teamMember-2:hover {
+  box-shadow: 0 0 11px #46792f;
+}
+@media (max-width: 800px) {
+  .teamMember-2 {
+    width: 28%;
+  }
+}
+@media (max-width: 500px) {
+  .teamMember-2 {
+    width: 62%;
+  }
 }
 .donateButton {
   color: white;

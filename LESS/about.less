@@ -6,56 +6,30 @@
 
 .firstTwo {
   .team-member-section();
+  @media @tablet {
+    justify-content: space-between;
+  }
 }
 
 .teamMember {
   .team-member-box();
   .flex-box-column();
-  align-self: center;
-  margin: 1% 0;
-  border: 1px solid;
-  padding: 10px;
-  border-radius: 10px;
-  transition: box-shadow 0.3s;
-  box-shadow: 5px 10px @green;
+  @media @phone {
+    width: 90%;
+  }
+  width: 35%;
+}
+
+.teamMember-2 {
+  .team-member-box();
+  .flex-box-column();
   @media @tablet {
-    width: 40%;
-    margin-bottom: 3%;
+    width: 28%;
   }
   @media @phone {
-    margin-bottom: 3%;
-    width: 50%;
+    width: 62%;
   }
-  h3 {
-    text-align: center;
-    margin-top: 4%;
-    padding-bottom: 2%;
-    color: @blue;
-    @media @phone {
-      font-size: 2.5rem;
-    }
-  }
-  img {
-    align-content: center;
-    width: 100%;
-    height: auto;
-    padding-top: 5%;
-    border-top: 2px solid @brown;
-  }
-  ul {
-    margin: 5% 0;
-    a {
-      font-size: 1rem;
-      text-decoration: none;
-    }
-  }
-  li {
-    margin: 5% 0;
-    font-size: 1rem;
-  }
-  &:hover {
-    box-shadow: 0 0 11px @green;
-  }
+  width: 22%;
 }
 
 .donateButton {
