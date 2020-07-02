@@ -1,0 +1,122 @@
+.flex-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-box-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.button {
+  a {
+    text-decoration: ;
+  }
+  color: #46792f;
+  text-decoration: none;
+  background: #ffffff;
+  padding: 1.8%;
+  border: 4px solid #773f1a;
+  display: inline-block;
+  transition: all 0.4s ease 0s;
+  margin-top: 3%;
+  margin-bottom: 5%;
+  font-size: 2.4rem;
+
+  &:hover {
+    color: #ffffff;
+    background: @blue;
+    border-color: @blue;
+    cursor: pointer;
+    transition: all 0.4s ease 0s;
+  }
+}
+
+.desktop-style {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.animal-box {
+  width: 30%;
+  height: 75%;
+  @media @phone {
+    width: 50%;
+  }
+  img {
+    width: 30%;
+  }
+  border: 5px solid @green;
+}
+
+.team-member-section {
+  display: flex;
+  @media @phone {
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-right: 15%;
+  margin-left: 15%;
+}
+
+.team-member-box {
+  @media @phone {
+    width: 50%;
+  }
+  img {
+    width: 30%;
+  }
+  border: 5px solid @brown;
+  align-self: center;
+  margin: 1% 0;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  transition: box-shadow 0.3s;
+  box-shadow: 5px 10px @blue;
+  @media @tablet {
+    width: 40%;
+    margin-bottom: 3%;
+  }
+  @media @phone {
+    margin-bottom: 3%;
+    width: 50%;
+  }
+  h3 {
+    text-align: center;
+    margin-top: 4%;
+    padding-bottom: 2%;
+    color: @green;
+    word-break: break-word;
+    @media @phone {
+      font-size: 2.5rem;
+    }
+  }
+  img {
+    align-content: center;
+    width: 100%;
+    height: auto;
+    padding-top: 5%;
+    border-top: 2px solid @brown;
+  }
+  ul {
+    word-break: break-all;
+    margin: 5% 0;
+    a {
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+  }
+  li {
+    margin: 5% 0 5% 7%;
+    font-size: 1.2rem;
+  }
+  &:hover {
+    box-shadow: 0 0 11px @green;
+  }
+}

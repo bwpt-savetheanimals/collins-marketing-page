@@ -1,0 +1,54 @@
+//about page less
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.firstTwo {
+  .team-member-section();
+  @media @tablet {
+    justify-content: space-between;
+  }
+}
+
+.teamMember {
+  .team-member-box();
+  .flex-box-column();
+  @media @phone {
+    width: 90%;
+  }
+  width: 35%;
+}
+
+.teamMember-2 {
+  .team-member-box();
+  .flex-box-column();
+  @media @tablet {
+    width: 28%;
+  }
+  @media @phone {
+    width: 62%;
+  }
+  width: 22%;
+}
+
+.donateButton {
+  color: white;
+  text-decoration: none;
+  background: @blue;
+  padding: 1.5rem;
+  border-radius: 50px;
+  display: inline-block;
+  border: none;
+  transition: all 0.4s ease 0s;
+  &:hover {
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+    transition: all 0.4s ease 0s;
+  }
+}
+
+footer {
+  @media @phone {
+    margin-top: 5%;
+  }
+}
